@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>السيرة الذاتية - CV</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brown: {
+                dark: '#4E342E',
+              },
+              gray: {
+                light: '#f9f9f9',
+                medium: '#6b7280',
+                dark: '#111827',
+              },
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .lang-ar { display: block; }
+      .lang-en { display: none; }
+      [data-lang="en"] .lang-ar { display: none; }
+      [data-lang="en"] .lang-en { display: block; }
+    </style>
+  </head>
+  <body class="bg-gray-light font-sans text-center" id="page" data-lang="ar" dir="rtl">
+
+    <!-- زر اللغة -->
+    <div class="p-4 max-w-4xl mx-auto text-right">
+      <button onclick="toggleLanguage()" class="bg-brown-dark text-white px-4 py-2 rounded">
+        <span class="lang-ar">English</span>
+        <span class="lang-en">العربية</span>
+      </button>
+    </div>
+
+    <!-- رأس الصفحة -->
+    <header class="bg-brown-dark text-white py-8 shadow">
+      <h1 class="text-4xl font-bold lang-ar">جنى الخميس</h1>
+      <h1 class="text-4xl font-bold lang-en">Jana Al-khamis</h1>
+
+      <p class="mt-2 text-lg text-gray-300 lang-ar">مبرمجة ومصممة واجهات</p>
+      <p class="mt-2 text-lg text-gray-300 lang-en">Programmer & UI Designer</p>
+    </header>
+
+    <!-- نبذة -->
+    <section class="max-w-4xl mx-auto mt-8 p-6 bg-white rounded-xl shadow text-center">
+      <h2 class="text-2xl font-semibold mb-4 text-gray-dark lang-ar">نبذة عني  </h2>
+      <h2 class="text-2xl font-semibold mb-4 text-gray-dark lang-en">About Me</h2>
+
+      <p class="text-gray-medium leading-loose lang-ar">
+       خريجة دبلوم برمجة من جامعة الإمام محمد بن سعود الإسلامية عام 2023، أمتلك شغفًا كبيرًا في مجال تطوير البرمجيات وتصميم واجهات المستخدم. أسعى لتطوير مهاراتي باستمرار والمساهمة في مشاريع تقنية تواكب احتياجات السوق وتقدم حلولًا إبداعية وفعالة.
+      </p>
+      <p class="text-gray-medium leading-loose lang-en">
+        I am a Programming Diploma graduate from Imam Muhammad ibn Saud Islamic University, class of 2023. I am passionate about software development and user interface design. I continuously seek to improve my skills and contribute to innovative tech projects that offer real-world solutions and meet market needs.
+
+
+      </p>
+    </section>
+
+    <!-- المهارات -->
+    <section class="max-w-4xl mx-auto mt-6 p-6 bg-white rounded-xl shadow text-center">
+      <h2 class="text-2xl font-semibold mb-4 text-gray-dark lang-ar">المهارات</h2>
+      <h2 class="text-2xl font-semibold mb-4 text-gray-dark lang-en">Skills</h2>
+
+      <div class="flex flex-wrap justify-center gap-4">
+        <span class="bg-brown-dark text-white px-4 py-2 rounded-full">HTML </span>
+        <span class="bg-gray-dark text-white px-4 py-2 rounded-full">Flutter</span>
+        <span class="bg-gray-medium text-white px-4 py-2 rounded-full">JavaScript</span>
+        <span class="bg-black text-white px-4 py-2 rounded-full lang-ar">CSS</span>
+        <span class="bg-black text-white px-4 py-2 rounded-full lang-en">CSS</span>
+        <span class="bg-brown-dark text-white px-4 py-2 rounded-full">Git & GitHub</span>
+        <span class="bg-brown-dark text-white px-4 py-2 rounded-full">tailwind</span>
+
+      </div>
+    </section>
+
+    <!-- الشهادات -->
+    <section class="max-w-4xl mx-auto mt-6 p-6 bg-white rounded-xl shadow text-center">
+      <h2 class="text-2xl font-semibold mb-6 text-gray-dark lang-ar">الشهادات</h2>
+      <h2 class="text-2xl font-semibold mb-6 text-gray-dark lang-en">Certificates</h2>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <img src="A.jpeg" alt="شهادة 1" class="rounded shadow mx-auto" />
+        <img src="b.png" alt="شهادة 2" class="rounded shadow mx-auto" />
+        <img src="c.png" alt="شهادة 3" class="rounded shadow mx-auto" />
+      </div>
+    </section>
+
+    <!-- تحميل CV -->
+    <section class="max-w-4xl mx-auto mt-6 p-6 bg-white rounded-xl shadow text-center">
+      <h2 class="text-2xl font-semibold mb-4 text-gray-dark lang-ar">تحميل السيرة الذاتية</h2>
+      <h2 class="text-2xl font-semibold mb-4 text-gray-dark lang-en">Download CV</h2>
+
+      <a href="cv- jana alkhamis (1).pdf" download class="inline-block bg-brown-dark hover:bg-black text-white font-bold py-3 px-6 rounded-full transition">
+        <span class="lang-ar">تحميل PDF</span>
+        <span class="lang-en">Download PDF</span>
+      </a>
+    </section>
+
+    <!-- تذييل -->
+    <footer class="text-center text-sm text-gray-500 py-6 mt-8">
+      <span class="lang-ar">&copy; 2025 جنى الخميس - جميع الحقوق محفوظة</span>
+      <span class="lang-en">&copy; 2025 Jana Al-khamis - All rights reserved</span>
+    </footer>
+
+    <!-- سكربت تغيير اللغة -->
+    <script>
+      function toggleLanguage() {
+        const page = document.getElementById('page');
+        const currentLang = page.getAttribute('data-lang');
+        const newLang = currentLang === 'ar' ? 'en' : 'ar';
+        page.setAttribute('data-lang', newLang);
+        page.setAttribute('dir', newLang === 'ar' ? 'rtl' : 'ltr');
+      }
+    </script>
+
+  </body>
+</html>
